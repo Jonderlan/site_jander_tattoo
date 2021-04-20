@@ -1,0 +1,351 @@
+/*		  
+Olá
+Este é o CSS do Site de Webdesign
+Qualquer dúvida consulte :::http://www.w3.org/community/webed/wiki/CSS/Properties:::
+*/
+
+/* Normatização CSS */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 100%;
+    background-color: #000000
+}
+
+
+/*
+Todo 'a' vem por default sublinhado, para mudar isso deve-se usar as seguintes propriedades:
+text-decoration: none ==> retira o sublinhado;
+text-decoration: underline ==> coloca um sublinhado;
+text-decoration: overline ==> coloca um sobrelinhado;
+text-decoration: underline overline ==> coloca sobre e sublinhado juntos;
+text-decoration: line-through ==> coloca uma linha em cima do texto.
+*/
+a {
+    color: #00ccff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+/*
+Como estilizar o comportamento do mouse
+a:link estiliza o estado UP (corresponde a situação inicial do link, isto é, o aspecto do link quando a página é carregada no browser do usuário);
+a:visited estiliza o estado VISITED (é o aspecto que o link assume quando o usuário passa o ponteiro do mouse sobre o link);
+a:hover estiliza o estado OVER (é o aspecto do link depois que foi visitado pelo usuário);
+a:active estiliza o estado link ativo (é o aspecto do link ativo, isto é, aquele que foi clicado pelo usuário.);
+*/
+
+a:hover{
+    text-decoration:underline;
+
+    
+}
+
+/* Estilos Principais*/
+
+.container{
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+img, figure, video, embed{
+    max-width: 100%;
+
+}
+
+header {
+    width: 100%;    
+    margin-top: 36px;
+    background-color: #000000, 
+
+
+}
+
+.marca{
+    float: left;
+    width: 234px;
+}
+
+nav {
+    float: right;
+    width: 840px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 52px;
+}
+
+nav li {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+nav li a {
+    color: #fff;
+}
+
+/* 
+O Position não serve para diagramar a estrutura de layouts. Para isso, você utiliza a propriedade float do css. O Position vai servir para fazer coisas mais simples.
+#fixed irá fixar a posição do elemento na coordenada que você definir
+#relative posiciona o elemento em relação a si mesmo.
+#absolute se utiliza do ponto superior esquerdo de outros elementos. Estes elementos são os parentes dele do elemento com position absolute. Mais especificamente o pai.
+*/
+
+/*Banner da home*/
+
+.banner_home {
+    background-image: url(../img/banner_home.png);
+    background-size: 1200px;
+    background-repeat:no-repeat;
+    position: inherit;
+    height: 650px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.chamado {
+    position: inherit;
+    top: 300px;
+    float: right;
+    margin-right: 48px;
+    margin-top: 200px;
+}
+
+.chamado a {
+    color: #000000;
+    font-weight: 200;
+    padding: 0px 5px 0px 5px;
+    
+}
+
+.chamado h1{
+    font-family: 'Felix Titling';
+    font-size: 50px;
+    width: 300px;
+    text-align:right;
+    color: #707070;
+    
+}
+
+.orcamento {
+    background-color: #ff0000;
+    border-radius: 8px;
+    float: right;
+}
+
+/*Banner da home - FIM */
+
+.banner_tipostatoo {
+    background-image: url(../img/banner_tinta.png);
+    background-size: 1200px;
+    background-repeat:repeat-y;
+    height: 400px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.caixa_banner_tipostatoo {
+    background: rgba(0,0,0,0.8);
+    height: 400px;
+}
+
+/*Tipos de Tattoo*/
+
+.tipos_tattoo {
+    width: 210px;
+    height: 300px;
+    float: left;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: -20px;
+    background-color: #38C1CB;
+    text-align: center;
+    border-radius: 8px;
+    color: #000000;
+    padding: 15px 10px 10px 10px;
+}
+
+.tipos_tattoo h2{
+    margin-top: 0;
+}
+
+
+/*Tipos de Tattoo - FIM */
+
+
+/*Depoimentos*/
+
+.titulo_depoimentos {
+    margin: 20px 50px 20px 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #707070;
+}
+
+.titulo_depoimentos p{
+
+    text-align: center;
+    font-family: 'Felix Titling';
+    font-size: 30px;
+    width: 300px;
+}
+
+
+.caixa_depoimentos {
+    width: 300px;
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.texto_depoimentos {
+    text-align:center;
+    height: 180px;
+    padding: 15px 10px 10px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.caixa_depoimentos img {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+
+}
+
+.caixa_depoimentos p {
+    text-align: center;
+}
+/*Depoimentos - FIM */
+
+
+/* MENU*/
+.caixa_header {
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    margin-top: 0;
+    width: 1128px;
+}
+
+
+
+/* MENU - FIM*/
+
+h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.destaque{
+    font-size: 18px;
+    color: #fff;
+    font-weight:200;
+}
+
+
+.coluna:last-child {
+    margin-right: 0;
+}
+
+.coluna p {
+    text-align:justify;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+
+footer {
+    width: 100%;
+    background: #707070;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer p{
+    width: 250px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+/* PORTIFÓLIO*/
+
+.caixa_portifolio {
+    position: static;
+    background: rgba(0,0,0,0.6);
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+
+}
+
+.caixa_portifolio img{
+    width: 400px;
+    height: 400px;
+}
+
+.conteiner_portifolio {
+    padding-top: 130px;
+    padding-left: 100px;
+    margin-bottom: 80px;
+    height: 2050px;
+}
+.caixa_portifolio p {
+    font-family: 'Felix Titling';
+    font-size: 15px;
+}
+/* PORTIFÓLIO - FIM*/
+
+
+
+/* SOBRE NÓS*/
+.conteiner_sobrenos {
+    padding-top: 130px;
+    margin-bottom: 80px;
+    height: 1150px;
+}
+
+.sobre_nos_textos h2 {
+    font-family: 'Felix Titling';
+    font-size: 30px;
+    width: 800px;
+    color: #707070;
+}
+
+.sobre_nos_textos p {
+    font-size: 15px;
+    width: 700px;
+    color: #858585;
+    margin-bottom: 40px;
+}
+
+.sobre_nos_textos img{
+    border: 10px solid #707070;
+    width: 900px;
+}
+
+/* SOBRE NÓS - FIM*/
+
+
+
+
