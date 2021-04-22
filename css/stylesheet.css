@@ -199,12 +199,27 @@ O Position não serve para diagramar a estrutura de layouts. Para isso, você ut
     width: 300px;
 }
 
+.titulo_depoimentos2 {
+    margin: 20px 50px 20px 50px;
+    padding-top: 130px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #707070;
+}
+
+.titulo_depoimentos2 p {
+    text-align: center;
+    font-family: 'Felix Titling';
+    font-size: 30px;
+    width: 300px;
+}
 
 .caixa_depoimentos {
     width: 300px;
     float: left;
     margin-right: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -229,6 +244,27 @@ O Position não serve para diagramar a estrutura de layouts. Para isso, você ut
 .caixa_depoimentos p {
     text-align: center;
 }
+
+.veja_mais_depoimentos {
+    background-color: #858585;
+    border-radius: 8px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000000;
+    margin-left: 450px;
+    margin-bottom: 50px;
+}
+    
+.veja_mais_depoimentos a {
+    color: #000000;
+    font-weight: 200;
+    padding: 0px 5px 0px 5px;
+}
+
+
+
+
 /*Depoimentos - FIM */
 
 
@@ -239,10 +275,8 @@ O Position não serve para diagramar a estrutura de layouts. Para isso, você ut
     margin-top: 0;
     width: 1128px;
 }
-
-
-
 /* MENU - FIM*/
+
 
 h1{
     font-size: 40px;
